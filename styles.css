@@ -24,11 +24,19 @@ body {
     padding: 20px;
     border-radius: 10px;
     color: #fff;
+    position: relative;
 }
 
 .header p {
     font-size: x-large;
     margin: 0;
+}
+
+.header .banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 h2 {
