@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc0cb;
+    background-color: #ffc0cb; /* Розовый фон */
     color: #333;
     margin: 0;
     padding: 0;
@@ -14,6 +14,10 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Скругленные углы */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards; /* Анимация при загрузке */
 }
 
 .header, .navigation, .content {
@@ -22,9 +26,9 @@ body {
 
 .header {
     text-align: center;
-    background-color: #ffc0cb;
+    background-color: #ffb6c1;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; /* Скругленные углы */
     color: #fff;
     position: relative;
 }
@@ -35,11 +39,12 @@ body {
 }
 
 .header .banner {
-    width: 80%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10px; /* Скругленные углы */
     margin-bottom: 20px;
 }
+
 @media (min-width: 768px) {
     .header .banner {
         width: 25%; /* Размер баннера для экранов шире 768px */
@@ -79,4 +84,12 @@ a:hover {
 
 .participants-list li a:hover {
     text-decoration: underline;
+}
+
+/* Анимация для плавного появления элементов снизу вверх */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
